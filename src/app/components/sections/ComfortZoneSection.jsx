@@ -63,14 +63,14 @@ const ComfortZoneSection = () => {
           <AnimatedOnScroll animation="fade-in" delay={200}>
             <div className="mb-3">
               <span className="px-4 py-1 bg-red-100 text-red-700 rounded-full font-medium text-sm uppercase tracking-wider">
-                La nostra terra
+                Food Concept
               </span>
             </div>
           </AnimatedOnScroll>
           
           <AnimatedOnScroll animation="fade-in-down" delay={300}>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              La nostra <span className="text-red-600">Comfort Zone</span>
+              Produciamo <span className="text-red-600">Eventi di successo</span>
             </h2>
           </AnimatedOnScroll>
           
@@ -82,6 +82,49 @@ const ComfortZoneSection = () => {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
               Siamo amanti della nostra terra e delle sue tradizioni. Tutto ciò che facciamo è per lasciare un credito di fiducia alle nuove generazioni.
             </p>
+          </AnimateOnScroll>
+        </div>
+        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 relative">
+          <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-80 bg-red-50/30 rounded-3xl blur-3xl"></div>
+          
+          <AnimateOnScroll animation="fade-left" delay={200} className="order-2 md:order-1 relative z-10">
+            <div className="mb-4">
+              <span className="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full uppercase tracking-wider font-semibold">Dal 2013</span>
+            </div>
+           
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              Ci occupiamo di progetti di animazione territoriale scoprendo e valorizzando i prodotti tipici che caratterizzano le comunità come Bagheria e Piana degli Albanesi. Per le istituzioni creiamo e produciamo format di live marketing, comunicazione e tutto ciò che serve per realizzare eventi di successo.
+            </p>
+            <Link href="/servizi/event">
+              <button
+                className="mt-4 bg-gradient-to-r from-red-600 to-red-700 text-white py-3 px-8 rounded-full font-medium shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 flex items-center"
+              >
+                Scopri i nostri eventi
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </Link>
+          </AnimateOnScroll>
+          
+          <AnimateOnScroll animation="fade-right" delay={400} className="order-1 md:order-2 relative group">
+            <div className="relative">
+              <div className="w-full h-64 md:h-96 hover:scale-[1.03] transition-transform duration-300 relative overflow-hidden rounded-xl shadow-2xl">
+                <Image
+                  src='https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/food.png?alt=media&token=0221877e-b771-4b65-84e8-ec39fa42af9b'
+                  alt="Food Concept - Sfincione siciliano"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-60 transition-all duration-300"></div>
+              </div>
+              <div className="absolute inset-0 rounded-xl border-2 border-red-100 transform translate-x-4 translate-y-4 -z-10"></div>
+              <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-red-50 rounded-full"></div>
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-red-50 rounded-full hidden md:block"></div>
+            </div>
           </AnimateOnScroll>
         </div>
 
@@ -124,49 +167,7 @@ const ComfortZoneSection = () => {
         </AnimatedOnScroll>
 
         {/* Food Concept Section migliorata */}
-        <div className="grid md:grid-cols-2 gap-16 items-center mb-20 relative">
-          <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-80 bg-red-50/30 rounded-3xl blur-3xl"></div>
-          
-          <AnimateOnScroll animation="fade-left" delay={200} className="order-2 md:order-1 relative z-10">
-            <div className="mb-4">
-              <span className="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full uppercase tracking-wider font-semibold">Dal 2013</span>
-            </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Food Concept</h3>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Ci occupiamo di progetti di animazione territoriale scoprendo e valorizzando i prodotti tipici che caratterizzano le comunità come Bagheria e Piana degli Albanesi. Per le istituzioni creiamo e produciamo format di live marketing, comunicazione e tutto ciò che serve per realizzare eventi di successo.
-            </p>
-            <Link href="/servizi/event">
-              <button
-                className="mt-4 bg-gradient-to-r from-red-600 to-red-700 text-white py-3 px-8 rounded-full font-medium shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 flex items-center"
-              >
-                Scopri i nostri eventi
-                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </button>
-            </Link>
-          </AnimateOnScroll>
-          
-          <AnimateOnScroll animation="fade-right" delay={400} className="order-1 md:order-2 relative group">
-            <div className="relative">
-              <div className="w-full h-64 md:h-96 hover:scale-[1.03] transition-transform duration-300 relative overflow-hidden rounded-xl shadow-2xl">
-                <Image
-                  src='https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/food.png?alt=media&token=0221877e-b771-4b65-84e8-ec39fa42af9b'
-                  alt="Food Concept - Sfincione siciliano"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
-                />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-60 transition-all duration-300"></div>
-              </div>
-              <div className="absolute inset-0 rounded-xl border-2 border-red-100 transform translate-x-4 translate-y-4 -z-10"></div>
-              <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-red-50 rounded-full"></div>
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-red-50 rounded-full hidden md:block"></div>
-            </div>
-          </AnimateOnScroll>
-        </div>
+
       </div>
     </section>
   );

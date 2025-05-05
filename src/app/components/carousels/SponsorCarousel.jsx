@@ -25,7 +25,7 @@ const SponsorCarousel = ({ sponsorGroups }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSponsorGroup();
-    }, 4000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [sponsorGroups.length]);

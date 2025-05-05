@@ -11,8 +11,8 @@ const TestimonialsSection = () => {
     { id: 5, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/DECO-02.png?alt=media&token=61a10b13-d473-4031-8c09-63a91516e74b"},
     { id: 6, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/MORETTI%20FORNI.png?alt=media&token=241c5092-c056-40cb-874d-9592790d27f4" },
     { id: 7, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/RIGGI.png?alt=media&token=2dbc8999-c2c9-4e8d-bc2b-4ed00ee3811b" },
-    { id: 8, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/SAGRIM%20ELECTROLUX-02.png?alt=media&token=3190592c-e20f-4aa5-b7ef-c26d8c6b9442" },
-    { id: 9, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/UNIONE%20EUROPEA-02.png?alt=media&token=70d5b417-c3ad-4533-9888-2eaa013d6d10"},
+    { id: 8, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/electrolux.png?alt=media&token=8a15e2f8-b8a8-4292-a341-2694ace64d63" },
+    { id: 9, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/sagrim.png?alt=media&token=049d1ff4-8a52-46fd-8feb-06ac508dd4e6"},
     { id: 10, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/acqua%20panna-02.png?alt=media&token=11599bf0-7c4c-43eb-9939-b0028abe2d69" },
     { id: 11, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/all%20food-02.png?alt=media&token=7c85fa51-20c7-45d3-95c9-11f9263bba07" },
     { id: 12, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/barbera%20logo.png?alt=media&token=b21be495-55fa-42ec-95e9-389e704f4097" },
@@ -42,13 +42,13 @@ const TestimonialsSection = () => {
         <div className="text-center mb-14">
           <AnimatedOnScroll animation="fade-in" delay={200} className="mb-3">
             <span className="px-4 py-1 bg-red-100 text-red-700 rounded-full font-medium text-sm uppercase tracking-wider">
-              I Nostri Partner
+              Partner
             </span>
           </AnimatedOnScroll>
           
           <AnimatedOnScroll animation="fade-in-down" delay={300}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              I Nostri <span className="text-red-600">Sponsor</span>
+             Istituzioni Pubbliche e Private<span className="text-red-600">Che ci hanno Scelto</span>
             </h2>
           </AnimatedOnScroll>
           

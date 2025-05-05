@@ -27,22 +27,23 @@ const TeamSection = () => {
     },
     {
       id: 4,
+      name: 'Desiree Chiarenza',
+      role: 'Assistant e Community Manager',
+      image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/desire.jpeg?alt=media&token=7895f081-0808-4252-9bf9-e355e5754517'
+    },
+    {
+      id: 5,
       name: 'Vincenzo Busalacchi',
       role: 'Full Stack Developer',
       image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/vincenzo.jpeg?alt=media&token=dba12809-b5cb-4197-acb8-e4a1b581d0ae'
     },
     {
-      id: 5,
+      id: 6,
       name: 'Aurora Corso',
       role: 'Account senior e Social Media manager',
       image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/aurora.jpg?alt=media&token=a77f8a1e-7619-4a58-8240-67eb5fe2eff3'
     },
-    {
-      id: 6,
-      name: 'Desiree Chiarenza',
-      role: 'Executive Assistant',
-      image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/desire.jpeg?alt=media&token=6b7fb601-f91a-4856-af4f-fb6760d138bd'
-    },
+
     {
       id: 7,
       name: 'Rosellina Mantini',

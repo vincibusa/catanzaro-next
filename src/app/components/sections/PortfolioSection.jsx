@@ -111,7 +111,7 @@ const PortfolioSection = () => {
         <div className="text-center mb-20">
           <AnimatedOnScroll animation="fade-in" delay={200} className="mb-3">
             <span className="px-4 py-1 bg-red-100 text-red-700 rounded-full font-medium text-sm uppercase tracking-wider">
-              Talent Partner
+           Collaborazioni
             </span>
           </AnimatedOnScroll>
           
