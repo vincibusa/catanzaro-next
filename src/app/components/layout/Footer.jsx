@@ -202,11 +202,17 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-red-900 mt-10 pt-6">
-          <div className="flex flex-col md:flex-row justify-center items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div>
             <p className="text-gray-300 text-sm">
               © {currentYear} Catanzaro & Partners. Tutti i diritti riservati.
             </p>
-
+            </div>
+            <div>
+            <p className="text-gray-300 text-sm">
+            P.IVa07241830822 - Capitale Sociale € 10.000,00 (i.v.)
+            </p>
+            </div>
           </div>
         </div>
       </div>

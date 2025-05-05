@@ -48,7 +48,7 @@ const TestimonialsSection = () => {
           
           <AnimatedOnScroll animation="fade-in-down" delay={300}>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-             Istituzioni Pubbliche e Private<span className="text-red-600">Che ci hanno Scelto</span>
+             Istituzioni Pubbliche e Private<span className="text-red-600"> Che ci hanno Scelto</span>
             </h2>
           </AnimatedOnScroll>
           

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Catanzaro & Partners | Agenzia di Sviluppo Web e Digital Marketing",
+  title: "Catanzaro & Partners | Produzione di eventi, marketin web development e design",
   description: "Agenzia specializzata in sviluppo web, digital marketing e soluzioni tecnologiche innovative per aziende e professionisti.",
   keywords: "sviluppo web, digital marketing, SEO, Next.js, design responsivo, web development",
   authors: [{ name: "Catanzaro & Partners" }],
@@ -29,7 +29,7 @@ export const metadata = {
     apple: '/favicon-32x32.png',
   },
   openGraph: {
-    title: "Catanzaro & Partners | Agenzia di Sviluppo Web e Digital Marketing",
+    title: "Catanzaro & Partners | Produzione di eventi, marketin web development e design",
     description: "Agenzia specializzata in sviluppo web, digital marketing e soluzioni tecnologiche innovative per aziende e professionisti.",
     url: "https://catanzaroepartners.it",
     siteName: "Catanzaro & Partners",

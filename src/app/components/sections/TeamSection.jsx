@@ -28,7 +28,7 @@ const TeamSection = () => {
     {
       id: 4,
       name: 'Desiree Chiarenza',
-      role: 'Assistant e Community Manager',
+      role: 'Assistant Event',
       image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/desire.jpeg?alt=media&token=7895f081-0808-4252-9bf9-e355e5754517'
     },
     {
@@ -68,7 +68,7 @@ const TeamSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <AnimateOnScroll delay={200}>
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Il Nostro Team
+            Un Team Giovane e Intraprendente
           </h2>
         </AnimateOnScroll>
 

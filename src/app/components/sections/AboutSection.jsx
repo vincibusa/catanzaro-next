@@ -100,7 +100,7 @@ const AboutSection = () => {
           </AnimateOnScroll>
 
           <AnimateOnScroll animation="fade-right" delay={400} className="relative h-[450px] shadow-2xl rounded-xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-tr from-red-600/20 to-transparent z-10"></div>
+          
             <Image
               src="https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/fotoAbout.jpg?alt=media&token=00eb8df4-dfed-4fc1-afc0-821fa388b277"
               alt="Team di Catanzaro & Partners"
