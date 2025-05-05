@@ -42,6 +42,18 @@ const TeamSection = () => {
       name: 'Desiree Chiarenza',
       role: 'Executive Assistant',
       image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/desire.jpeg?alt=media&token=6b7fb601-f91a-4856-af4f-fb6760d138bd'
+    },
+    {
+      id: 7,
+      name: 'Rosellina Mantini',
+      role: 'Consulent and Event Director',
+      image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/rosellinaMatintini.jpeg?alt=media&token=e4dfcaae-7d82-495a-8dc5-1a4b898f1bc8'
+    },
+    {
+      id: 8,
+      name: 'Tiziana Raspanti',
+      role: 'Consulent and Food Director',
+      image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/TizianaRaspanti.jpeg?alt=media&token=72611b88-41f5-42de-87d5-e92944c9ad1e'
     }
   ];
 
@@ -59,7 +71,7 @@ const TeamSection = () => {
           </h2>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <AnimateOnScroll 
               key={member.id} 

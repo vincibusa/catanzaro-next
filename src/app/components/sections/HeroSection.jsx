@@ -3,7 +3,7 @@ import AnimateOnScroll from '../animation/AnimateOnScroll';
 import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 
 const HeroSection = () => {
-  const videoUrl="https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/videoBackopt.mp4?alt=media&token=99c1193d-ea1b-4974-85ce-fbdcc76ffaa3"
+  const videoUrl="https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/videoBackopt.mp4?alt=media&token=0bc87a85-21b6-4ebd-9c7b-0d3bf3df99f8"
 
   return (
     <section id="hero" className="relative bg-gray-900 text-white h-screen flex items-center">

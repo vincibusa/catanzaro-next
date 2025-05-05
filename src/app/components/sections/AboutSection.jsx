@@ -63,7 +63,7 @@ const AboutSection = () => {
           
           <AnimateOnScroll animation="fade-up" delay={500}>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-              La Pubblicità può durare solo un attimo, ma con strategia e tattica può durare molto di più.
+              Costruiamo e progettiamo eventi e azioni di marketing che guardano all'innovazione.
             </p>
           </AnimateOnScroll>
         </div>
@@ -71,13 +71,16 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center mb-24">
           <AnimateOnScroll animation="fade-left" delay={300} className="space-y-6">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Da anni ci occupiamo di produzione e progettazione di eventi enogastronomici e culturali, generando valore aggiunto per i territorio.
+              Da anni ci occupiamo di produzione, allestimento e progettazione di eventi enogastronomici e culturali, generando valore aggiunto per i territorio.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Ideiamo campagne di comunicazione per istituzioni e imprese, forniamo consulenze per PMI e sosteniamo le imprese in progetti d'internazionalizzazione.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               I nostri punti di forza sono la comunicazione istituzionale e d'impresa attraverso lo sviluppo di un planing integrato tra web marketing e event project.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+            Pianifichiamo, progettiamo, sviluppiamo e gestiamo siti web, applicazioni, portali ed e-commerce che colpiscono e attirano l'attenzione offrendo una fantastica esperienza utente: dal semplice sito vetrina a soluzioni complesse personalizzate.
             </p>
             
             <div className="grid grid-cols-3 gap-6 pt-4 mt-8 border-t border-gray-200">
@@ -99,7 +102,7 @@ const AboutSection = () => {
           <AnimateOnScroll animation="fade-right" delay={400} className="relative h-[450px] shadow-2xl rounded-xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-tr from-red-600/20 to-transparent z-10"></div>
             <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              src="https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/fotoAbout.jpg?alt=media&token=00eb8df4-dfed-4fc1-afc0-821fa388b277"
               alt="Team di Catanzaro & Partners"
               fill
               className="object-cover"

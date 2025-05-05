@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
+import ContactForm from './ContactForm';
 
 const ContactSection = () => {
   const services = [
@@ -56,8 +57,24 @@ const ContactSection = () => {
                     </div>
                   </div>
                   <div className="ml-6">
-                    <h4 className="text-lg font-semibold text-gray-900">Indirizzo</h4>
+                    <h4 className="text-lg font-semibold text-gray-900">Indirizzo sede legale</h4>
                     <p className="text-gray-600 mt-2 leading-relaxed">Via Litterio 54,<br/>90011 Bagheria (PA), Italia</p>
+                  </div>
+            
+                </div>
+                <div className="flex items-start">
+                  <div className="flex-shrink-0">
+                    <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-lg p-3 shadow-md">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                  </div>
+        
+                  <div className="ml-6">
+                    <h4 className="text-lg font-semibold text-gray-900">Indirizzo sede operativo</h4>
+                    <p className="text-gray-600 mt-2 leading-relaxed">Via Massimo Dazelio. 50 (ex Papagiovanni XIII,26),<br/>90011 Bagheria (PA), Italia</p>
                   </div>
                 </div>
                 
@@ -97,127 +114,7 @@ const ContactSection = () => {
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Inviaci un messaggio</h3>
               
-              <form action="/api/contact" method="POST">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                      Nome e cognome *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                      placeholder="Il tuo nome"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                      placeholder="La tua email"
-                    />
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
-                      Telefono
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                      placeholder="Il tuo numero di telefono"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="company" className="block text-gray-700 font-medium mb-2">
-                      Azienda
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                      placeholder="La tua azienda"
-                    />
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <label className="block text-gray-700 font-medium mb-2">
-                    Servizi di interesse
-                  </label>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {services.map((service) => (
-                      <div key={service} className="flex items-center">
-                        <input
-                          type="checkbox"
-                          id={service}
-                          name="services"
-                          value={service}
-                          className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
-                        />
-                        <label htmlFor={service} className="ml-2 text-gray-700">
-                          {service}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                    Messaggio *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows="5"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent resize-none"
-                    placeholder="Descrivi il tuo progetto o la tua richiesta..."
-                  ></textarea>
-                </div>
-                
-                <div className="mb-8">
-                  <div className="flex items-center">
-                    <input
-                      id="privacy"
-                      name="privacy"
-                      type="checkbox"
-                      required
-                      className="h-4 w-4 text-red-600 focus:ring-red-500 border-gray-300 rounded"
-                    />
-                    <label htmlFor="privacy" className="ml-2 text-gray-700 text-sm">
-                      Acconsento al trattamento dei dati personali secondo la{' '}
-                      <Link href="/privacy-policy" className="text-red-600 hover:underline">
-                        Privacy Policy
-                      </Link>
-                      . *
-                    </label>
-                  </div>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  Invia messaggio
-                </button>
-              </form>
+              <ContactForm services={services} />
             </div>
           </AnimateOnScroll>
         </div>
