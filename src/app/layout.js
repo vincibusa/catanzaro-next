@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Catanzaro & Partners | Produzione di eventi, marketin web development e design",
+  title: "Catanzaro & Partners | Produzione di eventi, marketing web development e design",
   description: "Agenzia specializzata in sviluppo web, digital marketing e soluzioni tecnologiche innovative per aziende e professionisti.",
   keywords: "sviluppo web, digital marketing, SEO, Next.js, design responsivo, web development",
   authors: [{ name: "Catanzaro & Partners" }],
