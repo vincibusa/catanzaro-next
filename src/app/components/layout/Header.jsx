@@ -59,15 +59,7 @@ const Header = () => {
         </svg>
       )
     },
-    { 
-      name: 'Concept', 
-      id: 'comfort-zone',
-      icon: (
-        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-        </svg>
-      )
-    },
+
     { 
       name: 'Portfolio', 
       id: 'portfolio',
@@ -115,7 +107,7 @@ const Header = () => {
             <button
               key={item.name}
               onClick={() => scrollToSection(item.id)}
-              className="text-gray-600 hover:text-red-600 transition-colors duration-300 cursor-pointer text-sm lg:text-base"
+              className="text-gray-600 hover:text-red-700 transition-colors duration-300 cursor-pointer text-sm lg:text-base"
             >
               {item.name}
             </button>
@@ -124,7 +116,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => scrollToSection('contatti')}
-            className="bg-red-600 text-white py-2 px-4 lg:px-6 rounded-full font-medium hover:bg-red-700 transition-colors duration-300 text-sm lg:text-base"
+            className="bg-red-600 text-white py-2 px-4 lg:px-6 rounded-full font-medium hover:bg-red-700 transition-colors duration-300 text-sm lg:text-base cursor-pointer"
           >
             Contattaci
           </motion.button>
@@ -169,7 +161,7 @@ const Header = () => {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.id)}
-                className="flex items-center text-gray-600 hover:text-red-600 transition-colors duration-300 py-2 text-left text-sm"
+                className="flex items-center text-gray-600 hover:text-red-700 transition-colors duration-300 py-2 text-left text-sm"
               >
                 {item.icon}
                 {item.name}

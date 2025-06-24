@@ -1,5 +1,4 @@
 import TeamContactButton from '../buttons/TeamContactButton';
-import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
 import TitleCard from '../cards/TitleCard';
 
@@ -22,13 +21,13 @@ const TeamSection = () => {
     {
       id: 3,
       name: 'Salvo Scaduto',
-      role: 'Partnering Relationship e Ufficio Stampa',
+      role: 'Ufficio Stampa',
       image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/Salvo.jpeg?alt=media&token=103aae00-0217-4edc-85b9-d8b480b81a3f'
     },
     {
       id: 4,
       name: 'Desiree Chiarenza',
-      role: 'Assistant Event',
+      role: 'Segreteria Organizzativa',
       image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/desire.jpeg?alt=media&token=7895f081-0808-4252-9bf9-e355e5754517'
     },
     {
@@ -59,56 +58,53 @@ const TeamSection = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-      {/* Elementi decorativi */}
-      <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-red-50 opacity-30"></div>
-      <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-red-50 opacity-40"></div>
-      <div className="absolute top-1/3 right-0 w-20 h-20 rounded-full bg-red-100 opacity-20"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <AnimateOnScroll delay={200}>
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Un Team Giovane e Intraprendente
-          </h2>
-        </AnimateOnScroll>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-            <AnimateOnScroll 
-              key={member.id} 
-              delay={index * 100}
-            >
-              <TitleCard
-                imageSrc={member.image}
-                altText={member.name}
-                captionText={member.name}
-                description={member.role}
-                containerHeight="300px"
-                containerWidth="100%"
-                scaleOnHover={1.05}
-                rotateAmplitude={10}
-                showMobileWarning={false}
-                showTooltip={false}
-              />
-            </AnimateOnScroll>
-          ))}
-        </div>
-
-        <AnimatedOnScroll animation="fade-in-up" delay={400}>
-          <div className="text-center mt-20 relative">
-            {/* Elemento decorativo */}
-            <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-red-100 rounded-full opacity-50"></div>
-            
-            <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-lg leading-relaxed">
-              Sei interessato a unirti al nostro team di esperti appassionati? 
-              Siamo sempre alla ricerca di talenti che condividono la nostra visione.
-            </p>
-            <TeamContactButton />
-            <p className="text-gray-500 text-sm mt-4">Invia la tua candidatura</p>
-          </div>
-        </AnimatedOnScroll>
+    <><div className="relative ">
+      <div className="absolute inset-0 flex items-center" aria-hidden="true">
+        <div className="w-full border-t border-gray-200" />
       </div>
-    </section>
+      <div className="relative flex justify-center">
+        <span className="bg-white px-3 text-red-700">
+          <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 11.072l-3.2-6.4a1 1 0 00-1.78-.22l-1.4 4.2-4.2-1.4a1 1 0 00-1.22.54l-3.2 6.4a1 1 0 001.22 1.22l4.2-1.4 1.4 4.2a1 1 0 001.78.22l3.2-6.4a1 1 0 00-.22-1.22z" />
+          </svg>
+        </span>
+      </div>
+    </div><section id="team" className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        {/* Elementi decorativi */}
+        <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-red-50 opacity-30"></div>
+        <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-red-50 opacity-40"></div>
+        <div className="absolute top-1/3 right-0 w-20 h-20 rounded-full bg-red-100 opacity-20"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <AnimateOnScroll delay={200}>
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12 max-w-4xl mx-auto">
+              Un team di <strong className="font-bold text-red-700">professionisti giovani e dinamici</strong> pronti per <strong className="font-bold text-red-700">coordinare e gestire</strong> tutti gli aspetti organizzativi dei tuoi eventi o sviluppare dei <strong className="font-bold text-red-700">piani di marketing strategico</strong>.
+            </h3>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member, index) => (
+              <AnimateOnScroll
+                key={member.id}
+                delay={index * 100}
+              >
+                <TitleCard
+                  imageSrc={member.image}
+                  altText={member.name}
+                  captionText={member.name}
+                  description={member.role}
+                  containerHeight="300px"
+                  containerWidth="100%"
+                  scaleOnHover={1.05}
+                  rotateAmplitude={10}
+                  showMobileWarning={false}
+                  showTooltip={false} />
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+        </div>
+      </section></>
   );
 };
 

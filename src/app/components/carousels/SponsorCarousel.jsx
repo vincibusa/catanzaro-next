@@ -36,7 +36,7 @@ const SponsorCarousel = ({ sponsorGroups }) => {
       <div className="flex justify-between absolute w-full top-1/2 -translate-y-1/2 px-2 md:px-0 z-20 pointer-events-none">
         <button
           onClick={prevSponsorGroup}
-          className="pointer-events-auto bg-white/90 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg text-gray-700 hover:text-red-600 focus:outline-none transition-all duration-300 border border-gray-100 transform -translate-x-1 md:-translate-x-6 hover:scale-110 active:scale-90"
+          className="pointer-events-auto bg-white/90 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg text-gray-700 hover:text-red-700 focus:outline-none transition-all duration-300 border border-gray-100 transform -translate-x-1 md:-translate-x-6 hover:scale-110 active:scale-90"
           aria-label="Sponsor precedenti"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,7 +46,7 @@ const SponsorCarousel = ({ sponsorGroups }) => {
 
         <button
           onClick={nextSponsorGroup}
-          className="pointer-events-auto bg-white/90 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg text-gray-700 hover:text-red-600 focus:outline-none transition-all duration-300 border border-gray-100 transform translate-x-1 md:translate-x-6 hover:scale-110 active:scale-90"
+          className="pointer-events-auto bg-white/90 backdrop-blur-sm rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg text-gray-700 hover:text-red-700 focus:outline-none transition-all duration-300 border border-gray-100 transform translate-x-1 md:translate-x-6 hover:scale-110 active:scale-90"
           aria-label="Sponsor successivi"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

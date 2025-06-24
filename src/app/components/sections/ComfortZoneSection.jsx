@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
-import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 
 const ComfortZoneSection = () => {
   // Immagini per la galleria
@@ -60,23 +59,23 @@ const ComfortZoneSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
-          <AnimatedOnScroll animation="fade-in" delay={200}>
+          <AnimateOnScroll animation="fade-up" delay={200}>
             <div className="mb-3">
               <span className="px-4 py-1 bg-red-100 text-red-700 rounded-full font-medium text-sm uppercase tracking-wider">
                 Food Concept
               </span>
             </div>
-          </AnimatedOnScroll>
+          </AnimateOnScroll>
           
-          <AnimatedOnScroll animation="fade-in-down" delay={300}>
+          <AnimateOnScroll animation="fade-down" delay={300}>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Produciamo <span className="text-red-600">Eventi di successo</span>
+              Produciamo <span className="text-red-700">Eventi di successo</span>
             </h2>
-          </AnimatedOnScroll>
+          </AnimateOnScroll>
           
-          <AnimatedOnScroll animation="fade-in" delay={400}>
+          <AnimateOnScroll animation="fade-up" delay={400}>
             <div className="w-24 h-1.5 bg-gradient-to-r from-red-500 to-red-700 mx-auto mb-8 rounded-full"></div>
-          </AnimatedOnScroll>
+          </AnimateOnScroll>
           
           <AnimateOnScroll animation="fade-up" delay={500}>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
@@ -129,16 +128,16 @@ const ComfortZoneSection = () => {
         </div>
 
         {/* Galleria di immagini migliorata */}
-        <AnimatedOnScroll animation="fade-in" delay={400} className="mb-24 relative">
+        <AnimateOnScroll animation="fade-up" delay={400} className="mb-24 relative">
           {/* Elementi decorativi */}
           <div className="absolute -top-10 -left-10 w-20 h-20 border-2 border-red-200 rounded-lg z-0 opacity-50"></div>
           <div className="absolute -bottom-10 -right-10 w-20 h-20 border-2 border-red-200 rounded-lg z-0 opacity-50"></div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 relative z-10">
             {galleryImages.map((image, index) => (
-              <AnimatedOnScroll
+              <AnimateOnScroll
                 key={index}
-                animation="fade-in-up"
+                animation="fade-up"
                 delay={index * 100 + 500}
                 className={`
                   ${index === 0 ? "col-span-2 row-span-2 relative h-64 md:h-96" : "relative h-40 md:h-52"}
@@ -161,10 +160,10 @@ const ComfortZoneSection = () => {
                   <h3 className="text-white text-base md:text-lg font-bold drop-shadow-md">{image.title}</h3>
                   <p className="text-red-200 text-xs md:text-sm font-medium">{image.alt}</p>
                 </div>
-              </AnimatedOnScroll>
+              </AnimateOnScroll>
             ))}
           </div>
-        </AnimatedOnScroll>
+        </AnimateOnScroll>
 
         {/* Food Concept Section migliorata */}
 

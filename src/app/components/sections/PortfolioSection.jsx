@@ -1,4 +1,3 @@
-import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
 import TitleCard from '../cards/TitleCard';
 
@@ -103,71 +102,58 @@ const PortfolioSection = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-      <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-red-50 opacity-30"></div>
-      <div className="absolute bottom-10 -left-32 w-64 h-64 rounded-full bg-red-50 opacity-30"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-20">
-          <AnimatedOnScroll animation="fade-in" delay={200} className="mb-3">
-            <span className="px-4 py-1 bg-red-100 text-red-700 rounded-full font-medium text-sm uppercase tracking-wider">
-           Collaborazioni
-            </span>
-          </AnimatedOnScroll>
-          
-          <AnimatedOnScroll animation="fade-in-down" delay={300}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              I Nostri <span className="text-red-600">Talent Partner</span>
-            </h2>
-          </AnimatedOnScroll>
-          
-          <AnimatedOnScroll animation="fade-in" delay={400}>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-red-500 to-red-700 mx-auto mb-8 rounded-full"></div>
-          </AnimatedOnScroll>
-          
-          <AnimateOnScroll animation="fade-up" delay={500}>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light leading-relaxed">
-              Creiamo momenti di intrattenimento innovativi e coinvolgenti grazie alla collaborazione con i migliori talenti del panorama enogastronomico siciliano. La nostra esperienza ci permette di proporre format unici nel loro genere.
-            </p>
-          </AnimateOnScroll>
-        </div>
-
-        {/* Partner Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {partners.map((partner, index) => (
-            <AnimatedOnScroll 
-              key={partner.id} 
-              animation="fade-in-up" 
-              delay={index * 100 + 200}
-            >
-              <TitleCard
-                imageSrc={partner.image}
-                altText={partner.name}
-                captionText={partner.name}
-                description={partner.description}
-                containerHeight="320px"
-                containerWidth="100%"
-                scaleOnHover={1.05}
-                rotateAmplitude={0}
-                showMobileWarning={false}
-                showTooltip={false}
-              />
-            </AnimatedOnScroll>
-          ))}
-        </div>
-
-        <AnimatedOnScroll animation="fade-in-up" delay={600}>
-          <div className="mt-20 text-center">
-            <button
-              className="bg-gradient-to-r from-red-600 to-red-700 text-white py-4 px-10 rounded-full font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
-            >
-              Collabora con noi
-            </button>
-            <p className="text-gray-500 text-sm mt-4">Diventa nostro Talent Partner</p>
-          </div>
-        </AnimatedOnScroll>
+    <><div className="relative ">
+      <div className="absolute inset-0 flex items-center" aria-hidden="true">
+        <div className="w-full border-t border-gray-200" />
       </div>
-    </section>
+      <div className="relative flex justify-center">
+        <span className="bg-white px-3 text-red-700">
+          <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 11.072l-3.2-6.4a1 1 0 00-1.78-.22l-1.4 4.2-4.2-1.4a1 1 0 00-1.22.54l-3.2 6.4a1 1 0 001.22 1.22l4.2-1.4 1.4 4.2a1 1 0 001.78.22l3.2-6.4a1 1 0 00-.22-1.22z" />
+          </svg>
+        </span>
+      </div>
+    </div><section id="portfolio" className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-red-50 opacity-30"></div>
+        <div className="absolute bottom-10 -left-32 w-64 h-64 rounded-full bg-red-50 opacity-30"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-20">
+
+
+            <AnimateOnScroll animation="fade-up" delay={500}>
+              <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12 max-w-4xl mx-auto">
+                Con i nostri talent Partner creiamo <strong className="font-bold text-red-700">momenti di intrattenimento innovativi e coinvolgenti</strong> grazie alla collaborazione con i <strong className="font-bold text-red-700">migliori talenti del panorama enogastronomico siciliano</strong>. La nostra esperienza ci permette di proporre <strong className="font-bold text-red-700">format unici nel loro genere</strong>.
+              </h3>
+            </AnimateOnScroll>
+          </div>
+
+          {/* Partner Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            {partners.map((partner, index) => (
+              <AnimateOnScroll
+                key={partner.id}
+                animation="fade-up"
+                delay={index * 100 + 200}
+              >
+                <TitleCard
+                  imageSrc={partner.image}
+                  altText={partner.name}
+                  captionText={partner.name}
+                  description={partner.description}
+                  containerHeight="320px"
+                  containerWidth="100%"
+                  scaleOnHover={1.05}
+                  rotateAmplitude={0}
+                  showMobileWarning={false}
+                  showTooltip={false} />
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+
+        </div>
+      </section></>
   );
 };
 

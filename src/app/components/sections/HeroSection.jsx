@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
-import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 
 const HeroSection = () => {
   const videoUrl="https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/videoBackopt.mp4?alt=media&token=0bc87a85-21b6-4ebd-9c7b-0d3bf3df99f8"
@@ -28,25 +27,20 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-20">
         <div className="max-w-3xl">
-          <AnimatedOnScroll animation="fade-in-up" delay={200}>
+          <AnimateOnScroll animation="fade-up" delay={200}>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Trasformiamo le idee in risultati tangibili
             </h1>
-          </AnimatedOnScroll>
+          </AnimateOnScroll>
           
-          <AnimatedOnScroll animation="fade-in-up" delay={400}>
+          <AnimateOnScroll animation="fade-up" delay={400}>
             <p className="text-xl md:text-2xl mb-10 text-gray-200">
               Sviluppiamo i tuoi progetti con creatività e innovazione per far crescere il tuo business.
             </p>
-          </AnimatedOnScroll>
+          </AnimateOnScroll>
           
-          <AnimatedOnScroll animation="fade-in-up" delay={600} className="flex flex-col sm:flex-row gap-4">
-            <Link 
-              href="#servizi" 
-              className="bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-medium text-lg transition-all duration-300 hover:scale-105 active:scale-95 text-center"
-            >
-              Scopri i nostri servizi
-            </Link>
+          <AnimateOnScroll animation="fade-up" delay={600} className="flex flex-col sm:flex-row gap-4">
+
             
             <Link 
               href="#contatti" 
@@ -54,7 +48,7 @@ const HeroSection = () => {
             >
               Contattaci
             </Link>
-          </AnimatedOnScroll>
+          </AnimateOnScroll>
         </div>
       </div>
       
