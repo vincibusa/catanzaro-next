@@ -138,7 +138,7 @@ const PortfolioSection = () => {
               >
                 <TitleCard
                   imageSrc={partner.image}
-                  altText={partner.name}
+                  altText={`${partner.name} - ${partner.description}`}
                   captionText={partner.name}
                   description={partner.description}
                   containerHeight="320px"

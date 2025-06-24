@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Catanzaro & Partners | Produzione di eventi, marketing web development e design",
-  description: "Agenzia specializzata in sviluppo web, digital marketing e soluzioni tecnologiche innovative per aziende e professionisti.",
-  keywords: "sviluppo web, digital marketing, SEO, Next.js, design responsivo, web development",
+  title: "Catanzaro & Partners | Eventi, Marketing & Sviluppo Web",
+  description: "Trasformiamo le tue idee in successo. Offriamo servizi integrati di produzione eventi, marketing digitale e sviluppo web per portare il tuo business al livello successivo.",
+  keywords: "produzione eventi, marketing digitale, sviluppo web, Catanzaro, agenzia web, branding, SEO",
   authors: [{ name: "Catanzaro & Partners" }],
   creator: "Catanzaro & Partners",
   publisher: "Catanzaro & Partners",
@@ -29,8 +29,8 @@ export const metadata = {
     apple: '/favicon-32x32.png',
   },
   openGraph: {
-    title: "Catanzaro & Partners | Produzione di eventi, marketin web development e design",
-    description: "Agenzia specializzata in sviluppo web, digital marketing e soluzioni tecnologiche innovative per aziende e professionisti.",
+    title: "Catanzaro & Partners | Soluzioni Creative per Eventi e Digitale",
+    description: "Scopri come possiamo far crescere il tuo brand con strategie di marketing innovative, sviluppo web all'avanguardia e produzione di eventi memorabili.",
     url: "https://catanzaroepartners.it",
     siteName: "Catanzaro & Partners",
     locale: "it_IT",

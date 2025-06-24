@@ -35,14 +35,14 @@ const AboutSection = () => {
   }, [startCounting]);
 
   const galleryImages = [
-    { src: '/TaoBuk.jpeg', alt: 'TaoBuk' },
-    { src: '/pianadeglialbanesi.jpeg', alt: 'Piana degli Albanesi' },
-    { src: '/sfincione.jpeg', alt: 'Sfincione Fest' },
-    { src: '/cannolo.jpeg', alt: 'Cannolo Fest' },
-    { src: '/cachi.jpeg', alt: 'Cachi' },
-    { src: '/sfincione2.jpeg', alt: 'Sfincione Fest' },
-    { src: '/premio.jpeg', alt: 'Premio All Food Sicily' },
-    { src: '/cannolo2.jpeg', alt: 'Sfincione Fest' },
+    { src: '/TaoBuk.jpeg', alt: 'Foto dell\'evento Taobuk a Taormina, un esempio di produzione eventi di successo.' },
+    { src: '/pianadeglialbanesi.jpeg', alt: 'Veduta di Piana degli Albanesi, uno dei suggestivi territori con cui collaboriamo.' },
+    { src: '/sfincione.jpeg', alt: 'Momento conviviale durante lo Sfincione Fest, evento enogastronomico da noi organizzato.' },
+    { src: '/cannolo.jpeg', alt: 'Primo piano di un cannolo siciliano, simbolo degli eventi enogastronomici che promuoviamo.' },
+    { src: '/cachi.jpeg', alt: 'Cesto di cachi freschi, rappresentazione della qualità dei prodotti locali valorizzati nei nostri eventi.' },
+    { src: '/sfincione2.jpeg', alt: 'Partecipanti e atmosfera dello Sfincione Fest, a testimonianza del successo dei nostri eventi.' },
+    { src: '/premio.jpeg', alt: 'Premiazione durante l\'evento All Food Sicily, un momento di riconoscimento per l\'eccellenza enogastronomica.' },
+    { src: '/cannolo2.jpeg', alt: 'Cannoli siciliani pronti per essere gustati, eccellenza dei nostri eventi a tema.' },
   ];
 
 

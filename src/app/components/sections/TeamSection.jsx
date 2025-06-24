@@ -90,7 +90,7 @@ const TeamSection = () => {
               >
                 <TitleCard
                   imageSrc={member.image}
-                  altText={member.name}
+                  altText={`${member.name}, ${member.role}`}
                   captionText={member.name}
                   description={member.role}
                   containerHeight="300px"

@@ -33,14 +33,12 @@ const ServicesSection = () => {
       )
     },
     {
-      title: 'Fiere',
-      description: "Progettiamo e realizziamo stand e spazi espositivi per fiere, coordinando tutti gli aspetti organizzativi e promozionali per garantire visibilità massima e interazioni efficaci.",
+      title: 'Digital Media',
+      description: "Gestiamo la tua immagine digitale con contenuti di alta qualità. Dalla fotografia ai video, curiamo campagne social e advertising per massimizzare la tua visibilità e raccontare la tua storia.",
       icon: (
         <svg className="w-16 h-16" viewBox="0 0 64 64">
-          <path d="M54 54H10V22h44z" fill="none" stroke="#231F20" strokeWidth="2" strokeMiterlimit="10"/>
-          <path d="M10 22L32 10l22 12" fill="none" stroke="#231F20" strokeWidth="2" strokeMiterlimit="10"/>
-          <path d="M22 54v-14h20v14" fill="none" stroke="#D82A2A" strokeWidth="2" strokeMiterlimit="10"/>
-          <path d="M22 32h20" fill="none" stroke="#D82A2A" strokeWidth="2" strokeMiterlimit="10"/>
+          <path d="M54 24h-6l-4-6H20l-4 6h-6c-2.2 0-4 1.8-4 4v24c0 2.2 1.8 4 4 4h44c2.2 0 4-1.8 4-4V28c0-2.2-1.8-4-4-4z" fill="none" stroke="#231F20" strokeWidth="2" strokeMiterlimit="10"/>
+          <circle cx="32" cy="39" r="8" fill="none" stroke="#D82A2A" strokeWidth="2" strokeMiterlimit="10"/>
         </svg>
       )
     },
@@ -105,9 +103,9 @@ const ServicesSection = () => {
       </div><section id="servizi" className="py-20 bg-white relative">
         <div className="container mx-auto px-4">
           <AnimateOnScroll delay={200} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-              Cosa Facciamo
-            </h2>
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12 max-w-4xl mx-auto">
+              Offriamo servizi di <strong className="text-red-700">produzione eventi</strong>, <strong className="text-red-700">marketing</strong>, <strong className="text-red-700">comunicazione</strong>, <strong className="text-red-700">sviluppo web</strong>, convegni, <strong className="text-red-700">digital media</strong>, adottando un approccio che valorizza la <strong className="text-red-700">creatività</strong>, la <strong className="text-red-700">sperimentazione</strong> e l'<strong className="text-red-700">innovazione</strong>.
+            </h3>
             <div className="w-24 h-1.5 bg-red-700 mx-auto mt-4 rounded-full"></div>
           </AnimateOnScroll>
 
