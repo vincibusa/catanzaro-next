@@ -32,7 +32,7 @@ const ContactSection = () => {
           </svg>
         </span>
       </div>
-    </div><section id="contatti" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    </div><section id="contatti" className="py-20 bg-white relative overflow-hidden">
         {/* Elementi decorativi */}
         <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-red-50 opacity-40"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-red-50 opacity-30"></div>
@@ -84,7 +84,7 @@ const ContactSection = () => {
 
                     <div className="ml-6">
                       <h4 className="text-lg font-semibold text-gray-900">Indirizzo sede operativo</h4>
-                      <p className="text-gray-600 mt-2 leading-relaxed">Via Massimo Dazelio. 50 (ex Papagiovanni XIII,26),<br />90011 Bagheria (PA), Italia</p>
+                      <p className="text-gray-600 mt-2 leading-relaxed">Via Massimo D'Azelio. 50 (ex Papa Giovanni XIII,26),<br />90011 Bagheria (PA), Italia</p>
                     </div>
                   </div>
 
@@ -112,7 +112,7 @@ const ContactSection = () => {
                     </div>
                     <div className="ml-6">
                       <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600 mt-2">catanzaroepartners@gmail.com</p>
+                      <p className="text-gray-600 mt-2">amministrazione@catanzaroepartners.it</p>
                     </div>
                   </div>
                 </div>

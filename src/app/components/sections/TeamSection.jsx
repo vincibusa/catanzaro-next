@@ -69,7 +69,7 @@ const TeamSection = () => {
           </svg>
         </span>
       </div>
-    </div><section id="team" className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    </div><section id="team" className="py-20 bg-white relative overflow-hidden">
         {/* Elementi decorativi */}
         <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-red-50 opacity-30"></div>
         <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-red-50 opacity-40"></div>

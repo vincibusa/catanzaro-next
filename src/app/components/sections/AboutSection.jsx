@@ -49,7 +49,7 @@ const AboutSection = () => {
   return (
     <>
 
-      <section id="chi-siamo" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+      <section id="chi-siamo" className="py-20 bg-white relative overflow-hidden">
       <div className="absolute -top-32 -right-32 w-64 h-64 rounded-full bg-red-100 opacity-30"></div>
       <div className="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-red-100 opacity-40"></div>
 

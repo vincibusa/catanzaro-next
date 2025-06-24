@@ -113,7 +113,7 @@ const PortfolioSection = () => {
           </svg>
         </span>
       </div>
-    </div><section id="portfolio" className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    </div><section id="portfolio" className="py-20 bg-white relative overflow-hidden">
         <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-red-50 opacity-30"></div>
         <div className="absolute bottom-10 -left-32 w-64 h-64 rounded-full bg-red-50 opacity-30"></div>
 

@@ -53,7 +53,7 @@ const ComfortZoneSection = () => {
   ];
 
   return (
-    <section id="comfort-zone" className=" bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section id="comfort-zone" className=" bg-white relative overflow-hidden">
       <div className="absolute -top-40 right-0 w-80 h-80 rounded-full bg-red-50 opacity-30"></div>
       <div className="absolute top-1/3 -left-20 w-40 h-40 rounded-full bg-red-50 opacity-20"></div>
       
