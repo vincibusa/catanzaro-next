@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import TeamContactButton from '../buttons/TeamContactButton';
 import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
+import TitleCard from '../cards/TitleCard';
 
 
 
@@ -77,33 +77,19 @@ const TeamSection = () => {
             <AnimateOnScroll 
               key={member.id} 
               delay={index * 100}
-              className="group relative h-full"
             >
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl h-full">
-                <div className="relative h-80 overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    priority={member.id <= 3}
-                  />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                  
-                  {/* Info overlay che appare al passaggio del mouse */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                    <h3 className="text-white text-xl font-bold mb-1">{member.name}</h3>
-                    <p className="text-red-200 text-sm font-medium">{member.role}</p>
-                  </div>
-                </div>
-                
-                <div className="p-6 bg-white">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1 group-hover:text-red-600 transition-colors">{member.name}</h3>
-                  <p className="text-red-500 text-sm font-medium">{member.role}</p>
-                </div>
-              </div>
+              <TitleCard
+                imageSrc={member.image}
+                altText={member.name}
+                captionText={member.name}
+                description={member.role}
+                containerHeight="300px"
+                containerWidth="100%"
+                scaleOnHover={1.05}
+                rotateAmplitude={10}
+                showMobileWarning={false}
+                showTooltip={false}
+              />
             </AnimateOnScroll>
           ))}
         </div>

@@ -1,6 +1,6 @@
-import Image from 'next/image';
 import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
+import TitleCard from '../cards/TitleCard';
 
 const PortfolioSection = () => {
   const partners = [
@@ -139,31 +139,19 @@ const PortfolioSection = () => {
               key={partner.id} 
               animation="fade-in-up" 
               delay={index * 100 + 200}
-              className="group relative bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <div className="aspect-w-1 aspect-h-1 w-full h-64 overflow-hidden relative">
-                <Image
-                  src={partner.image}
-                  alt={partner.name}
-                  fill
-                  className="object-cover object-center transition-all duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                  priority={partner.id <= 4}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-4 group-hover:translate-y-0">
-                  <h3 className="text-white text-xl font-bold mb-1">{partner.name}</h3>
-                  <p className="text-gray-300 text-sm">{partner.description}</p>
-                </div>
-              </div>
-              
-              <div className="p-4 group-hover:bg-red-50 transition-colors duration-300">
-                <h3 className="text-gray-900 font-bold group-hover:text-red-600 transition-colors duration-300">
-                  {partner.name}
-                </h3>
-                <p className="text-gray-600 text-sm">{partner.description}</p>
-              </div>
+              <TitleCard
+                imageSrc={partner.image}
+                altText={partner.name}
+                captionText={partner.name}
+                description={partner.description}
+                containerHeight="320px"
+                containerWidth="100%"
+                scaleOnHover={1.05}
+                rotateAmplitude={0}
+                showMobileWarning={false}
+                showTooltip={false}
+              />
             </AnimatedOnScroll>
           ))}
         </div>

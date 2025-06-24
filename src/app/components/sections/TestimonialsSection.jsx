@@ -1,6 +1,6 @@
-import SponsorCarousel from '../carousels/SponsorCarousel';
 import AnimatedOnScroll from '../animation/AnimatedOnScroll';
 import AnimateOnScroll from '../animation/AnimateOnScroll';
+import Image from 'next/image';
 
 const TestimonialsSection = () => {
   const sponsors = [
@@ -25,12 +25,6 @@ const TestimonialsSection = () => {
     { id: 19, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/mediacom-02.png?alt=media&token=c18a7458-974f-4320-93c9-fcba272a3f48" },
     { id: 20, image: "https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/sprint-02.png?alt=media&token=d3afb69a-c165-4840-8e54-40c5dd20e945" },
   ];
-
-  // Suddividi gli sponsor in gruppi di 5 per mostrarne diversi contemporaneamente
-  const sponsorGroups = [];
-  for (let i = 0; i < sponsors.length; i += 5) {
-    sponsorGroups.push(sponsors.slice(i, i + 5));
-  }
 
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
@@ -63,9 +57,29 @@ const TestimonialsSection = () => {
           </AnimateOnScroll>
         </div>
 
-        <AnimateOnScroll animation="fade-up" delay={600}>
-          <SponsorCarousel sponsorGroups={sponsorGroups} />
-        </AnimateOnScroll>
+        {/* Griglia degli sponsor */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
+          {sponsors.map((sponsor, index) => (
+            <AnimatedOnScroll 
+              key={sponsor.id} 
+              animation="fade-in-up" 
+              delay={index * 50 + 200}
+              className="group"
+            >
+              <div className=" overflow-hidden transform transition-all duration-300 hover:-translate-y-2  p-6 h-32 flex items-center justify-center">
+                <div className="relative w-full h-full">
+                  <Image
+                    src={sponsor.image}
+                    alt={`Partner ${sponsor.id}`}
+                    fill
+                    className="object-contain transition-transform duration-300 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                  />
+                </div>
+              </div>
+            </AnimatedOnScroll>
+          ))}
+        </div>
       </div>
     </section>
   );
