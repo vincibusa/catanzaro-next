@@ -136,7 +136,7 @@ const PortfolioSection = () => {
                 <AnimateOnScroll
                   key={partner.id}
                   animation="fade-up"
-                  delay={index * 100 + 200}
+                  delay={index * 30 + 60}
                   className="flex-shrink-0"
                 >
                   <TitleCard
@@ -161,7 +161,7 @@ const PortfolioSection = () => {
               <AnimateOnScroll
                 key={partner.id}
                 animation="fade-up"
-                delay={index * 100 + 200}
+                delay={index * 30 + 60}
               >
                 <TitleCard
                   imageSrc={partner.image}
