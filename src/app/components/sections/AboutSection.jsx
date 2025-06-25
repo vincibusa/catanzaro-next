@@ -154,7 +154,7 @@ const AboutSection = () => {
             </h4>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-right" delay={550}>
-            <h2 className='text-xl font-bold text-gray-800'>
+            <h2 className='text-lg font-bold text-gray-800'>
               <strong className="text-black">Organizzazione e produzione a 360°</strong> per ogni tipologia di evento, da <strong className="text-red-700">eventi corporate aziendali</strong> a <strong className="text-red-700">manifestazioni pubbliche e private</strong>.
             </h2>
           </AnimateOnScroll>
@@ -187,7 +187,30 @@ const AboutSection = () => {
           <div className="absolute -top-10 -left-10 w-20 h-20 border-2 border-red-200 rounded-lg z-0 opacity-50 hidden md:block"></div>
           <div className="absolute -bottom-10 -right-10 w-20 h-20 border-2 border-red-200 rounded-lg z-0 opacity-50 hidden md:block"></div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+          {/* Mobile: scroll orizzontale */}
+          <div className="md:hidden relative z-10">
+            <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+              {galleryImages.map((image, index) => (
+                <AnimateOnScroll
+                  key={index}
+                  animation="fade-up"
+                  delay={index * 100 + 500}
+                  className="relative h-64 w-48 flex-shrink-0 overflow-hidden rounded-lg shadow-lg group hover:shadow-xl transition-all duration-300"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    style={{objectFit: "cover"}}
+                    className="transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </div>
+          
+          {/* Desktop: grid */}
+          <div className="hidden md:grid md:grid-cols-4 gap-4 relative z-10">
             {galleryImages.map((image, index) => (
               <AnimateOnScroll
                 key={index}
@@ -202,7 +225,6 @@ const AboutSection = () => {
                   style={{objectFit: "cover"}}
                   className="transform transition-transform duration-500 group-hover:scale-110"
                 />
-
               </AnimateOnScroll>
             ))}
           </div>

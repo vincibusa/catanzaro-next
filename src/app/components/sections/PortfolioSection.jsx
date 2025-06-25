@@ -129,7 +129,34 @@ const PortfolioSection = () => {
           </div>
 
           {/* Partner Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          {/* Mobile: scroll orizzontale */}
+          <div className="lg:hidden">
+            <div className="flex gap-10 px-4 overflow-x-auto pb-4 scrollbar-hide">
+              {partners.map((partner, index) => (
+                <AnimateOnScroll
+                  key={partner.id}
+                  animation="fade-up"
+                  delay={index * 100 + 200}
+                  className="flex-shrink-0"
+                >
+                  <TitleCard
+                    imageSrc={partner.image}
+                    altText={`${partner.name} - ${partner.description}`}
+                    captionText={partner.name}
+                    description={partner.description}
+                    containerHeight="320px"
+                    containerWidth="280px"
+                    scaleOnHover={1.05}
+                    rotateAmplitude={0}
+                    showMobileWarning={false}
+                    showTooltip={false} />
+                </AnimateOnScroll>
+              ))}
+            </div>
+          </div>
+          
+          {/* Desktop: grid */}
+          <div className="hidden lg:grid lg:grid-cols-4 gap-6 md:gap-8">
             {partners.map((partner, index) => (
               <AnimateOnScroll
                 key={partner.id}

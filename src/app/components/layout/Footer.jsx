@@ -162,7 +162,7 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="text-gray-300">
-                Via Massimo Dazelio. 50 (ex Papagiovanni XIII,26),<br/>90011 Bagheria (PA), Italia
+                Via Massimo D'Azelio. 50 (ex Papa Giovanni XIII,26),<br/>90011 Bagheria (PA), Italia
                 </span>
               </li>
               <li className="flex items-start">
@@ -179,7 +179,7 @@ const Footer = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <span className="text-gray-300">catanzaroepartners@gmail.com</span>
+                <span className="text-gray-300">amministrazione@catanzaroepartners.it</span>
               </li>
               <li className="flex items-start">
                 <svg
