@@ -133,10 +133,8 @@ const PortfolioSection = () => {
           <div className="lg:hidden">
             <div className="flex gap-10 px-4 overflow-x-auto pb-4 scrollbar-hide">
               {partners.map((partner, index) => (
-                <AnimateOnScroll
+                <div
                   key={partner.id}
-                  animation="fade-up"
-                  delay={index * 30 + 60}
                   className="flex-shrink-0"
                 >
                   <TitleCard
@@ -146,11 +144,11 @@ const PortfolioSection = () => {
                     description={partner.description}
                     containerHeight="320px"
                     containerWidth="280px"
-                    scaleOnHover={1.05}
+                    scaleOnHover={1}
                     rotateAmplitude={0}
                     showMobileWarning={false}
                     showTooltip={false} />
-                </AnimateOnScroll>
+                </div>
               ))}
             </div>
           </div>

@@ -191,20 +191,17 @@ const AboutSection = () => {
           <div className="md:hidden relative z-10">
             <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
               {galleryImages.map((image, index) => (
-                <AnimateOnScroll
+                <div
                   key={index}
-                  animation="fade-up"
-                  delay={index * 30 + 150}
-                  className="relative h-64 w-48 flex-shrink-0 overflow-hidden rounded-lg shadow-lg group hover:shadow-xl transition-all duration-300"
+                  className="relative h-64 w-48 flex-shrink-0 overflow-hidden rounded-lg shadow-lg"
                 >
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
                     style={{objectFit: "cover"}}
-                    className="transform transition-transform duration-500 group-hover:scale-110"
                   />
-                </AnimateOnScroll>
+                </div>
               ))}
             </div>
           </div>
