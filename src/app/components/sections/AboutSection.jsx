@@ -215,7 +215,7 @@ const AboutSection = () => {
               <AnimateOnScroll
                 key={index}
                 animation="fade-up"
-                delay={index * 30 + 150}
+                delay={index * 30 + 60}
                 className="relative h-64 overflow-hidden rounded-lg shadow-lg group hover:shadow-xl transition-all duration-300"
               >
                 <Image
