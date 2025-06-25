@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import IubendaScript from "./components/IubendaScript";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,10 +49,13 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <IubendaScript />
         <Header />
         {children}
         <Footer />

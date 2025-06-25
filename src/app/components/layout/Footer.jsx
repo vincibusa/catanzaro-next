@@ -202,16 +202,32 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-red-900 mt-10 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div>
-            <p className="text-gray-300 text-sm">
-              © {currentYear} Catanzaro & Partners. Tutti i diritti riservati.
-            </p>
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
+              <p className="text-gray-300 text-sm">
+                © {currentYear} Catanzaro & Partners. Tutti i diritti riservati.
+              </p>
+              <div className="flex space-x-4">
+                <a 
+                  href="https://www.iubenda.com/privacy-policy/10812163" 
+                  className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-gray-300 hover:text-red-400 transition-colors duration-300 text-sm" 
+                  title="Privacy Policy"
+                >
+                  Privacy Policy
+                </a>
+                <a 
+                  href="https://www.iubenda.com/privacy-policy/10812163/cookie-policy" 
+                  className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe text-gray-300 hover:text-red-400 transition-colors duration-300 text-sm" 
+                  title="Cookie Policy"
+                >
+                  Cookie Policy
+                </a>
+              </div>
             </div>
             <div>
-            <p className="text-gray-300 text-sm">
-            P.IVa07241830822 - Capitale Sociale € 10.000,00 (i.v.)
-            </p>
+              <p className="text-gray-300 text-sm">
+                P.IVa07241830822 - Capitale Sociale € 10.000,00 (i.v.)
+              </p>
             </div>
           </div>
         </div>
