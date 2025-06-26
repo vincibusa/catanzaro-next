@@ -47,8 +47,8 @@ const PortfolioSection = () => {
     },
     {
       id: 8,
-      name: 'Fabio Potenzano',
-      image: 'https://firebasestorage.googleapis.com/v0/b/catanzaroepartners-13968.firebasestorage.app/o/potenzano-1024x683.jpg?alt=media&token=3dc9e279-3754-4bdb-a1f6-e8afc4e6925c',
+      name: 'Gianni Marino',
+      image: '/gianni.jpeg',
       description: 'Chef'
     },
     {
